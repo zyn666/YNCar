@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		31C483E12045527200CACC52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C483E02045527200CACC52 /* AppDelegate.swift */; };
-		31C483E32045527200CACC52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C483E22045527200CACC52 /* ViewController.swift */; };
-		31C483E62045527200CACC52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31C483E42045527200CACC52 /* Main.storyboard */; };
 		31C483E82045527200CACC52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31C483E72045527200CACC52 /* Assets.xcassets */; };
 		31C483EB2045527200CACC52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31C483E92045527200CACC52 /* LaunchScreen.storyboard */; };
+		980CA1C8CFEE96F2E5975543 /* Pods_YNCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042076DD3AD0835960006D70 /* Pods_YNCar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		042076DD3AD0835960006D70 /* Pods_YNCar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YNCar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31C483DD2045527200CACC52 /* YNCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YNCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31C483E02045527200CACC52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		31C483E22045527200CACC52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		31C483E52045527200CACC52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31C483E72045527200CACC52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31C483EA2045527200CACC52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31C483EC2045527200CACC52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		739B6859B1317A35E4569759 /* Pods-YNCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YNCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YNCar/Pods-YNCar.debug.xcconfig"; sourceTree = "<group>"; };
+		92F4EA1123A7B74AC19CAB0D /* Pods-YNCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YNCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-YNCar/Pods-YNCar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +29,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				980CA1C8CFEE96F2E5975543 /* Pods_YNCar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F62E3D1BA4A24A40F2281D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				739B6859B1317A35E4569759 /* Pods-YNCar.debug.xcconfig */,
+				92F4EA1123A7B74AC19CAB0D /* Pods-YNCar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		31C483D42045527200CACC52 = {
 			isa = PBXGroup;
 			children = (
 				31C483DF2045527200CACC52 /* YNCar */,
 				31C483DE2045527200CACC52 /* Products */,
+				2F62E3D1BA4A24A40F2281D5 /* Pods */,
+				59C83DC3C0B7F2774F41FEF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +67,19 @@
 			isa = PBXGroup;
 			children = (
 				31C483E02045527200CACC52 /* AppDelegate.swift */,
-				31C483E22045527200CACC52 /* ViewController.swift */,
-				31C483E42045527200CACC52 /* Main.storyboard */,
 				31C483E72045527200CACC52 /* Assets.xcassets */,
 				31C483E92045527200CACC52 /* LaunchScreen.storyboard */,
 				31C483EC2045527200CACC52 /* Info.plist */,
 			);
 			path = YNCar;
+			sourceTree = "<group>";
+		};
+		59C83DC3C0B7F2774F41FEF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				042076DD3AD0835960006D70 /* Pods_YNCar.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +89,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31C483EF2045527200CACC52 /* Build configuration list for PBXNativeTarget "YNCar" */;
 			buildPhases = (
+				213C25605B2D2326599984BB /* [CP] Check Pods Manifest.lock */,
 				31C483D92045527200CACC52 /* Sources */,
 				31C483DA2045527200CACC52 /* Frameworks */,
 				31C483DB2045527200CACC52 /* Resources */,
+				3F55ACBD3AADA01B8EC3B785 /* [CP] Embed Pods Frameworks */,
+				C462B681AE895B5D0129A0CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,18 +146,76 @@
 			files = (
 				31C483EB2045527200CACC52 /* LaunchScreen.storyboard in Resources */,
 				31C483E82045527200CACC52 /* Assets.xcassets in Resources */,
-				31C483E62045527200CACC52 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		213C25605B2D2326599984BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YNCar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F55ACBD3AADA01B8EC3B785 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YNCar/Pods-YNCar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YNCar/Pods-YNCar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C462B681AE895B5D0129A0CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YNCar/Pods-YNCar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		31C483D92045527200CACC52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31C483E32045527200CACC52 /* ViewController.swift in Sources */,
 				31C483E12045527200CACC52 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,14 +223,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		31C483E42045527200CACC52 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				31C483E52045527200CACC52 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		31C483E92045527200CACC52 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -272,6 +343,7 @@
 		};
 		31C483F02045527200CACC52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 739B6859B1317A35E4569759 /* Pods-YNCar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +359,7 @@
 		};
 		31C483F12045527200CACC52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92F4EA1123A7B74AC19CAB0D /* Pods-YNCar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
